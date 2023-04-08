@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            "2xl": { max: "1100px" },
+            // => @media (max-width: 1535px) { ... }
+
+            "xl": { max: "900px" },
+            // => @media (max-width: 1279px) { ... }
+
+            "lg": { max: "650px" },
+            // => @media (max-width: 1030px) { ... }
+
+            "md": { max: "400px" },
+            // => @media (max-width: 930px) { ... }
+
+            "sm": { max: "639px" },
+            // => @media (max-width: 639px) { ... }
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="h-12 w-[100%] bg-white">
+      <nav class="w-[70%] flex justify-start ml-[10%] pt-2 pl-5">
+        <img src="/12121231.svg" alt="" class="w-[30px] mr-[5%]" />
+        <ul class="flex gap-8 pt-10 text-black lg:hidden">
+          <li><a href="#">About</a></li>
+          <li class="text-[#777]"><a href="#">Services</a></li>
+          <li class="text-[#777]"><a href="#">Works</a></li>
+          <li class="text-[#777]"><a href="#">Blog</a></li>
+        </ul>
+        <img src="/1.png" alt="#" class="w-[12%] mt-3 ml-[80%] lg:w-[100px]" />
+      </nav>
+    </header>
+    <div class="flex w-[80%] ml-auto mr-auto mt-[5%] mb-[3%] md:block">
+      <div class="w-[45%] pt-[10%] md:w-[100%]">
+        <p class="text-[#777] pb-[3%] 2xl:text-[15px] lg:text-[12px] md:text-[25px]">Hello</p>
+        <h1 class="text-5xl font-bold pb-[3%] 2xl:text-2xl lg:text-[17px] md:text-5xl ">Adam Zakob</h1>
+        <p class="pb-[5%] 2xl:text-[15px] lg:text-[12px] md:text-[25px]">a freelance UX Designer</p>
+        <button
+          class="p-[2%] pl-[8%] pr-[8%] text-white rounded-3xl 2xl:text-[15px] md:text-[25px] lg:text-[12px] 2xl:rounded-2xl bg-blue-800"
+        >
+          Let’s Talk
+        </button>
+      </div>
+      <img src="/3.png" alt="" class="w-[40%] md:w-[100vh]" />
+    </div>
+    <div class="w-[80%] ml-auto mr-auto">
+      <p class="text-blue-800 2xl:text-[15px] lg:text-[12px] md:text-[25px]">Services</p>
+      <h1 class="w-[20%] text-3xl font-bold 2xl:text-2xl xl:text-[17px] xl:font-bold lg:text-[14px] md:text-3xl md:w-[100%]">What actually I love to do</h1>
+    </div>
+    <div class="flex w-[80%] ml-auto mr-auto mb-[5%] md:block">
+      <div class="w-[30%] md:w-[100%]">
+        <div class="flex mb-[5%] mt-[5%]">
+          <img src="/4.png" alt="" class="lg:w-[40px] md:w-[70px]" />
+          <p class="pt-[5%] pl-[5%] font-semibold 2xl:text-[15px] lg:text-[12px] md:text-[25px]">UX Research</p>
+        </div>
+        <p class="text-[#777] 2xl:text-[15px] lg:text-[12px] md:text-[20px]">
+          New demos are continually added and buying a single license for Mak
+          gives you access to all of what's shown below, plus everything that
+          will be added in the future.
+        </p>
+      </div>
+      <div class="w-[30%] ml-[5%] md:w-[100%]">
+        <div class="flex mb-[5%] mt-[5%]">
+          <img src="/5.png" alt="" class="lg:w-[40px] md:w-[70px]"/>
+          <p class="pt-[5%] pl-[5%] font-semibold 2xl:text-[15px] lg:text-[12px] md:text-[25px]">Brand Design</p>
+        </div>
+        <p class="text-[#777] 2xl:text-[15px] lg:text-[12px] md:text-[20px]">
+          New demos are continually added and buying a single license for Mak
+          gives you access to all of what's shown below, plus everything that
+          will be added in the future.
+        </p>
+      </div>
+      <div class="w-[30%] ml-[5%] md:w-[100%]">
+        <div class="flex mb-[5%] mt-[5%]">
+          <img src="/6.png" alt="" class="lg:w-[40px] md:w-[70px]"/>
+          <p class="pt-[5%] pl-[5%] font-semibold 2xl:text-[15px] lg:text-[12px] md:text-[25px]">Web Development</p>
+        </div>
+        <p class="text-[#777] 2xl:text-[15px] lg:text-[12px] md:text-[20px]">
+          New demos are continually added and buying a single license for Mak
+          gives you access to all of what's shown below, plus everything that
+          will be added in the future.
+        </p>
+      </div>
+    </div>
+    <div class="w-[100%]" style="background-image: url(./7.png)">
+      <div class="w-[80%] ml-auto mr-auto">
+        <p class="text-[#562aa7] 2xl:text-[15px] lg:text-[12px] md:text-[25px]">Portfolio</p>
+        <div class="flex pt-[2%] md:block">
+          <h1 class="w-[20%] text-3xl font-semibold 2xl:text-2xl xl:text-[18px] lg:text-[14px] md:text-3xl md:w-[100%]">All Creative Projects</h1>
+          <p class="text-[#4a1196] ml-[65%] 2xl:text-[15px] xl:text-[12px] lg:text-[10px] md:text-[25px] md:ml-[1%]">Explore More -></p>
+        </div>
+        <div class="flex md:block">
+          <img src="/8.png" alt="" class="w-[48%] md:w-[100%]" />
+          <img src="/9.png" alt="" class="w-[48%] ml-[4%] md:w-[100%]" />
+        </div>
+      </div>
+    </div>
+    <div class="w-[80%] ml-auto mr-auto">
+      <p class="text-blue-800 pb-[2%] 2xl:text-[15px] xl:text-[12px] lg:text-[9px] md:text-[25px]">Clients</p>
+      <h1 class="w-[15%] text-3xl font-semibold 2xl:text-2xl xl:text-[17px] lg:text-[13px] md:text-3xl md:w-[100%]">Big Deal With</h1>
+      <div class="flex md:flex-wrap">
+        <img src="/10.png" alt="" class="w-[20%] md:w-[45%]" />
+        <img src="/11.png" alt="" class="w-[20%] md:w-[45%]" />
+        <img src="/12.png" alt="" class="w-[20%] md:w-[45%]" />
+        <img src="/13.png" alt="" class="w-[20%] md:w-[45%]" />
+        <img src="/14.png" alt="" class="w-[20%] md:w-[45%]" />
+      </div>
+    </div>
+    <div class="w-[80%] ml-auto mr-auto">
+      <p class="text-blue-800 pb-[2%] 2xl:text-[15px] xl:text-[12px] lg:text-[9px] md:text-[25px]">Testimonials</p>
+      <h1 class="text-3xl font-semibold w-[20%] 2xl:text-2xl xl:text-[17px] lg:text-[13px] md:text-3xl md:w-[100%]">What People Says</h1>
+      <img src="/206058 1.svg" alt="" class="ml-[48%] w-[3%] pb-[2%] md:w-[5%]">
+      <div class="flex">
+        <img src="/aoQ4DYZLE_E (1).svg" alt="" class="w-[3%] rounded-md md:w-[5%]"/>
+        <p class="w-[50%] text-center ml-[20%] mr-[20%] 2xl:text-[15px] xl:text-[12px] lg:text-[10px] md:text-[12px]">
+          Quote testimonials demonstrate support for your product or feature
+          from a user who has experience with it. This can be significantly more
+          effective than traditional advertising methods as most consumers will
+          trust.
+        </p>
+        <img src="/aoQ4DYZLE_E (2).svg" alt="" class="w-[3%] rounded-md md:w-[5%]">
+      </div>
+      <div class="ml-[45%] pt-[2%] lg:ml-[40%]">
+      <img src="/aoQ4DYZLE_E (5).svg" alt="" class="rounded-2xl lg:w-[20%] md:ml-[9%] ">
+      <p class="font-semibold 2xl:text-[15px] xl:text-[12px]">Michal John</p>
+      </div>
+      <div class="flex">
+        <img src="/aoQ4DYZLE_E (3).svg" alt="" class="w-[3%] ml-[15%]  mr-[30%] rounded-md md:w-[5%]">
+        <p class="xl:text-[10px] lg:text-[8px]">CEO of MZP</p>
+        <img src="/aoQ4DYZLE_E (4).svg" alt="" class="w-[3%] mr-[15%] ml-[30%] rounded-md md:w-[5%]" >
+      </div>
+      <img src="/pager.svg" alt="" class="ml-[41%] pt-[2%] lg:ml-[35%] md:w-[25%] md:ml-[40%]">
+    </div>
+    <div class=" flex w-[80%] ml-auto mr-auto mt-[5%] md:flex-wrap ">
+          <div class="w-[20%] md:w-[45%]">
+            <p class="text-blue-800 pb-[2%] 2xl:text-[15px] xl:text-[12px] lg:text-[9px] md:text-[20px]">Blog</p>
+            <h1 class="w-[50%] text-2xl font-semibold 2xl:text-1x1 xl:text-[17px] lg:text-[13px] md:text-3xl md:w-[100%]">Get News
+                Feeds</h1>
+        </div>
+        <div class="mr-[8%] md:w-[45%]">
+            <img src="/Screenshot_1.png" alt="" >
+        </div>
+        <div  class="md:w-[45%]">
+            <img src="/Screenshot_2.png" alt="">
+        </div>
+        <div class="ml-[8%] md:w-[45%]">
+            <img src="/Screenshot_3.png" alt="">
+        </div>
+    </div>
+    <div class="w-[80%] ml-auto mr-auto lg:mt-[5%]">
+       <p class="text-blue-800 pb-[2%] 2xl:text-[15px] xl:text-[12px] lg:text-[9px] md:text-[25px]">Contact Me</p>
+       <div class="flex pb-[5%] md:block">
+        <h1 class="text-2xl font-semibold w-[40%] 2xl:text-1xl 2xl:font-semibold xl:text-[17px] lg:text-[12px] md:text-3xl md:w-[100%]">Let me know if you want to talk 
+            about a potential collaboration.
+            I'm available for freelance work.</h1>
+            <a href="#" class="text-blue-800 ml-[43%] 2xl:text-[15px] xl:text-[12px] lg:text-[9px] md:text-[25px] md:ml-[1%]">infoname@mail.com</a>
+       </div>
+        <p class="text-[#777] pb-[1%] 2xl:text-[15px] xl:text-[12px] lg:text-[9px] md:text-[20px]">What’s your name?</p>
+        <hr class="pb-[3%]">
+        <p class="text-[#777] pb-[1%] 2xl:text-[15px] xl:text-[12px] lg:text-[9px] md:text-[20px]">Your email</p>
+        <hr class="pb-[3%]">
+        <p class="text-[#777] pb-[1%] 2xl:text-[15px] xl:text-[12px] lg:text-[9px] md:text-[20px]">Tell me about your project</p>
+        <hr class="pb-[3%]">
+        <div class="flex pb-[8%]">
+            <button class="p-[1%] pl-[3%] pr-[3%] rounded-2xl bg-blue-800 text-white lg:text-[6px] md:text-[20px] md:w-[45%] 2xl:text-[15px] xl:text-[12px]">Get a Quote</button> 
+            <p class="text-blue-800 ml-[80%] 2xl:text-[15px] xl:text-[12px] lg:text-[8px] md:ml-[40%] md:text-[15px]" >@  -></p>
+        </div>
+        <h1 class="text-2xl text-center pb-[1%] 2xl:text-[15px] xl:text-[12px] lg:text-[9px] md:text-[20px]">Let’s be Friends</h1>
+        <div class="flex ml-[42%] pb-[5%] lg:ml-[45%] md:ml-[40%] ">
+            <img src="/Group 25.svg" alt="" class="w-[8%] lg:w-[5%] mr-[1%] md:w-[12%]">
+            <img src="/Group 24.svg" alt="" class="w-[8%] lg:w-[5%] md:w-[12%]">
+            <img src="/Group 25.svg" alt="" class="w-[8%] lg:w-[5%] ml-[1%] md:w-[12%]" >
+        </div>
+    </div>
+  </body>
+</html>
